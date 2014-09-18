@@ -61,6 +61,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="os5-WO-Dna">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="224" y="183" width="80" height="80"/>
+                                </variation>
+                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OWm-rf-o5y">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -100,30 +106,35 @@
                                     <rect key="frame" x="15" y="72" width="289" height="80"/>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="os5-WO-Dna">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ma Money" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ML1-Eh-Wru">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="224" y="183" width="80" height="80"/>
+                                    <rect key="frame" x="17" y="441" width="287" height="21"/>
                                 </variation>
-                            </imageView>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="os5-WO-Dna"/>
                                 <exclude reference="OWm-rf-o5y"/>
                                 <exclude reference="1hv-nM-I51"/>
                                 <exclude reference="INp-9V-xi5"/>
                                 <exclude reference="1Sw-S3-dvP"/>
-                                <exclude reference="os5-WO-Dna"/>
+                                <exclude reference="ML1-Eh-Wru"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
+                                <include reference="os5-WO-Dna"/>
                                 <include reference="OWm-rf-o5y"/>
                                 <include reference="1hv-nM-I51"/>
                                 <include reference="INp-9V-xi5"/>
                                 <include reference="1Sw-S3-dvP"/>
-                                <include reference="os5-WO-Dna"/>
+                                <include reference="ML1-Eh-Wru"/>
                             </mask>
                         </variation>
                     </view>
@@ -134,6 +145,7 @@
                         <outlet property="enterNameTextField" destination="OWm-rf-o5y" id="6Mn-Dd-jJe"/>
                         <outlet property="mailButton" destination="INp-9V-xi5" id="Jeq-D5-ZmP"/>
                         <outlet property="messageLabel" destination="1Sw-S3-dvP" id="PyY-Q7-mZC"/>
+                        <outlet property="nameLabel" destination="ML1-Eh-Wru" id="jJ0-RX-Cp8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
